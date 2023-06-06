@@ -6,7 +6,7 @@ use App\Http\Controllers\JuegosController;
 use App\Http\Controllers\TemasController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoriasController;
-use App\Http\Controllers\RetroalimentacionesController;
+use App\Http\Controllers\RetroalimentcionesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -55,7 +55,7 @@ Route::put('/categoria/{id}', [CategoriasController::class, 'update']);
 Route::delete('/categoria/{id}', [CategoriasController::class, 'destroy']);
 
 //tabla retroalimentacion
-Route::get('/retro', [RetroalimentacionesController::class, 'index']);
-Route::post('/retro', [RetroalimentacionesController::class, 'store']);
-Route::put('/retro/{id}', [RetroalimentacionesController::class, 'update']);
-Route::delete('/retro/{id}', [RetroalimentacionesController::class, 'destroy']);
+Route::get('/retro', [RetroalimentcionesController::class, 'index']);
+Route::post('/retro', [RetroalimentcionesController::class, 'store']);
+Route::put('/retro/{id}', [RetroalimentcionesController::class, 'update']);
+Route::delete('/retro/{id}', [RetroalimentcionesController::class, 'destroy']);

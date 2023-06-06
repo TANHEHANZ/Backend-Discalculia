@@ -14,6 +14,6 @@ class Juegos extends Model
         'nivel_dificultad',
         'imagen',
         'puntuacion',
-        
+        'id_categorias',
     ];
 }

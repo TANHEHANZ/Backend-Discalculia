@@ -23,6 +23,7 @@ class JuegosController extends Controller
         $jueg->nivel_dificultad=$request->nivel_dificultad;
         $jueg->imagen=$request->imagen;
         $jueg->puntuacion=$request->puntuacion;
+        $jueg->id_categorias=$request->id_categorias;
         $jueg->save();
         return $jueg;
     }
@@ -36,7 +37,7 @@ class JuegosController extends Controller
         $jueg->nivel_dificultad=$request->nivel_dificultad;
         $jueg->imagen=$request->imagen;
         $jueg->puntuacion=$request->puntuacion;
-
+        $jueg->id_categorias=$request->id_categorias;
         $jueg->save();
         return $jueg;
     }

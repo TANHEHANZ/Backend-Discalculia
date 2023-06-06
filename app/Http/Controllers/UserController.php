@@ -89,4 +89,23 @@ class UserController extends Controller
             "msg" => "Cierre de seccion",
         ]);
     }
+    public function deleteUser($id)
+    {
+        $user = User::find($id);
+    
+        if (!$user) {
+            return response()->json([
+                "status" => 0,
+                "msg" => "Usuario no encontrado",
+            ], 404);
+        }
+    
+        $user->delete();
+    
+        return response()->json([
+            "status" => 1,
+            "msg" => "Usuario eliminado exitosamente",
+        ]);
+    }
+
 }
